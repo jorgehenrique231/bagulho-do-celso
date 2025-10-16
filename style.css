@@ -1,4 +1,4 @@
-* {
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,13 +6,17 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    /* Black background */
+    background-color: #000;
+    /* Yellow text */
+    color: #FFD700;
 }
 
 header {
-    background-color: #222;
-    color: white;
+    /* Deep Black Header */
+    background-color: #111;
+    /* Yellow text for header */
+    color: #FFD700;
     padding: 20px 0;
     text-align: center;
 }
@@ -33,13 +37,16 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    /* Yellow links */
+    color: #FFD700;
     text-decoration: none;
     font-size: 1.1rem;
 }
 
 nav ul li a:hover {
+    /* Darker yellow/gold on hover */
     text-decoration: underline;
+    color: #FFA500;
 }
 
 .produtos {
@@ -59,12 +66,14 @@ nav ul li a:hover {
 }
 
 .produto {
-    background-color: white;
+    /* Product card background: using a dark gray to stand out against black body */
+    background-color: #333;
     padding: 20px;
     margin: 10px;
     width: 250px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adjusted shadow for dark background */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
     text-align: center;
 }
 
@@ -78,41 +87,17 @@ nav ul li a:hover {
 .produto h3 {
     font-size: 1.5rem;
     margin-top: 10px;
+    /* Ensuring product title is yellow */
+    color: #FFD700;
 }
 
 .produto p {
     margin: 10px 0;
     font-size: 1rem;
+    /* Ensuring product description text is visible */
+    color: #ccc;
 }
 
 .preco {
     font-size: 1.3rem;
-    color: #e74c3c;
-    font-weight: bold;
-    margin: 10px 0;
-}
-
-.btn-comprar {
-    background-color: #2ecc71;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.btn-comprar:hover {
-    background-color: #27ae60;
-}
-
-footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+    /* Changed price color to a different contrast
