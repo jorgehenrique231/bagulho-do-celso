@@ -4,61 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kings games</title>
+    <title>Kings Games - Loja de Jogos Digitais</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- Cabeçalho -->
     <header>
         <div class="logo">
             <h1>Kings Games</h1>
         </div>
         <nav>
             <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Jogos</a></li>
-                <li><a href="#">Sobre nós</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#inicio" title="Página Inicial">Início</a></li>
+                <li><a href="#produtos" title="Jogos em Destaque">Jogos</a></li>
+                <li><a href="#sobre" title="Sobre a Loja">Sobre nós</a></li>
+                <li><a href="#contato" title="Entre em Contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="produtos">
+    <!-- Seção de Produtos -->
+    <section id="produtos" class="produtos">
         <h2>Jogos em Destaque</h2>
         <div class="produtos-container">
+            <!-- Produto 1 -->
             <div class="produto">
-                <img src="7d31d621fb.webp" alt="Jogo 1">
+                <img src="7d31d621fb.webp" alt="Capa do Jogo Aventura" class="produto-imagem">
                 <h3>Jogo Aventura</h3>
                 <p>Explore mundos fantásticos e enfrente desafios épicos!</p>
                 <span class="preco">R$ 199,90</span>
-                <button class="btn-comprar">Comprar</button>
+                <button class="btn-comprar" onclick="comprarProduto('Jogo Aventura')">Comprar</button>
             </div>
+
+            <!-- Produto 2 -->
             <div class="produto">
-                <img src="Midnight_Club_3_DUB_Edition_capa.jpg" alt="Jogo 2">
+                <img src="Midnight_Club_3_DUB_Edition_capa.jpg" alt="Capa do Jogo Corrida" class="produto-imagem">
                 <h3>Jogo Corrida</h3>
                 <p>Desafie seus amigos em pistas de alta velocidade.</p>
                 <span class="preco">R$ 79,99</span>
-                <button class="btn-comprar">Comprar</button>
+                <button class="btn-comprar" onclick="comprarProduto('Jogo Corrida')">Comprar</button>
             </div>
+
+            <!-- Produto 3 -->
             <div class="produto">
-                <img src="Resident_Evil_Village.png" alt="Jogo 3">
+                <img src="Resident_Evil_Village.png" alt="Capa do Jogo de Ação" class="produto-imagem">
                 <h3>Jogo de Ação</h3>
                 <p>Prepare-se para ação intensa e gráficos impressionantes!</p>
                 <span class="preco">R$ 89,99</span>
-                <button class="btn-comprar">Comprar</button>
+                <button class="btn-comprar" onclick="comprarProduto('Jogo de Ação')">Comprar</button>
             </div>
-            
+
+            <!-- Produto 4 -->
             <div class="produto">
-                <img src="images.jpeg" alt="Jogo 4">
+                <img src="images.jpeg" alt="Capa do Jogo RPG" class="produto-imagem">
                 <h3>Jogo RPG</h3>
                 <p>Crie seu personagem e mergulhe em uma história de fantasia medieval!</p>
                 <span class="preco">R$ 149,50</span>
-                <button class="btn-comprar">Comprar</button>
+                <button class="btn-comprar" onclick="comprarProduto('Jogo RPG')">Comprar</button>
             </div>
-            </div>
+        </div>
     </section>
 
+    <!-- Seção Sobre -->
+    <section id="sobre">
+        <h2>Sobre a Kings Games</h2>
+        <p>Bem-vindo à <strong>Kings Games</strong>! Aqui você encontra os melhores jogos digitais para várias plataformas — títulos de ação, corrida, RPG e muito mais, tudo com ótimos preços e ofertas exclusivas!</p>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Fale com a equipe da <strong>Kings Games</strong> pelo e-mail: 
+            <a href="mailto:contato@kingsgames.com">contato@kingsgames.com</a>
+        </p>
+    </section>
+
+    <!-- Rodapé -->
     <footer>
-        <p>&copy; 2025 Loja de Jogos Digitais. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Kings Games. Todos os direitos reservados.</p>
     </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function comprarProduto(nomeProduto) {
+            alert(nomeProduto + ' foi adicionado ao carrinho da Kings Games!');
+        }
+    </script>
 </body>
 </html>
+
